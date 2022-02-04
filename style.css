@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+  url("../images/syd.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color:olive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+  /*background: red;*/
+}
+
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: olive;
+  font-weight: bold;
+}
+
+nav .menu a:first-child {
+  color:olivedrab;
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px grey;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px grey;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  /*background: #00b894;*/
+  background: olivedrab;
+  color: #000;
+}
+
+.btnone:hover {
+  background:olive;
+  color: white;
+}
+
+section .btntwo {
+  background: rgb(53, 53, 3);
+  color: white;
+}
+
+.btntwo:hover {
+  background: black;
+  color: white;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 5s infinite linear;
+  color: black;
+}
+ul {
+  list-style: none;
+  
+}
+.footer{
+  background-image: url(../images/antarctic-night.jpg);
+  width: 100%;
+  
+  
+
+  
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 25%;
+
+
+}
+
+.footer-col h4{
+	
+	font-size: 22px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: olive;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+footer-col ul li:not(:last-child){
+	margin-bottom:5px;
+}
+.footer-col ul li a{
+	font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-transform: capitalize;
+	color: olive;
+	text-decoration: none;
+	font-weight: 300;
+	color:olivedrab;
+	display: block;
+	transition: all 0.3s ease;
+  
+}
+
+.footer-col .social-links a{
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	color:olivedrab;
+	transition: all 0.5s ease;
+  font-weight: 300;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+@media(max-width:400px)
+{
+  .menu{
+    width: 100%;
+
+  }
+
+
+
+
+
+@keyframes changetext {
+  0% {
+    content: "USA";
+  }
+  20% {
+    content: "UK";
+  }
+  45% {
+    content: "AUSTRALIA";
+  }
+  60% {
+    content: "Canada";
+  }
+  80% {
+    content: "Europe";
+  }
